@@ -127,106 +127,106 @@ const books = [
     screened: true
   },
   {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
+    title: 'In cold blood',
+    sweTitle: 'Med kallt blod', 
+    author: 'Truman Capote',
     female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
+    translatedBy: 'Olov Jonason',
+    year: 1965,
+    genre: 'True crime',
+    pages: 471,
     plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
+      '1959 mördas den förmögne farmaren Herb Clutter och hans familj på Clutters gård i Kansas. Den 30 december arresteras de nyligen frigivna straffångarna Dick Hickock och Perry Smith för mordet. Drygt fem år senare hängs de. Dessa data markerar riktpunkterna i ett massmord som framstår som lika oundvikligt som meningslöst. Med kallt blod växer från en skildring av individuella öden till en bild av skoningslösa sociala mekanismer i det amerikanska samhället.',
+    image: './books-images/the-great-gatsby.png', 
+    haveRead: false,
+    screened: false
+  },
+  {
+    title: 'Handmaidens tale',
+    sweTitle: 'Tjänarinnans berättelse', 
+    author: 'Margaret Atwood',
+    female: true,
+    translatedBy: 'Maria Ekman',
+    year: 1985,
+    genre: 'Dystopi',
+    pages: 349,
+    plot:
+      'I kampen mot sjunkande födelsetal rekryteras kvinnor i fruktsam ålder och utnyttjas hämningslöst som Tjänarinnor när de befruktas mot sin vilja av härskarklassens män, Anförarna. Offred är en Tjänarinna som lever under strikt övervakning, men som drömmer om att ta sig bortom Muren och bli fri igen.',
+    image: './books-images/the-great-gatsby.png', 
+    haveRead: true,
+    screened: true
+  },
+  {
+    title: '1984',
+    sweTitle: '1984', 
+    author: 'George Orwell',
+    female: false,
+    translatedBy: 'Thomas Warburton',
+    year: 1948,
+    genre: 'Dystopi',
+    pages: 283,
+    plot:
+      'Winston Smith arbetar på Sanningsministeriet med att ändra historien och därmed visa att Partiet och dess ledare alltid haft rätt, och alltid kommer att ha det. Men i hans enformiga tillvaro väcks en längtan efter något annat, ett upproriskt frö som i sig är nog för att leda till hans undergång.',
+    image: './books-images/the-great-gatsby.png', 
+    haveRead: true,
+    screened: true
+  },
+  {
+    title: 'Animal Farm',
+    sweTitle: 'Djurfarmen', 
+    author: 'George Orwell',
+    female: false,
+    translatedBy: 'Nils Holmberg',
+    year: 1945,
+    genre: 'Klassiker',
+    pages: 127,
+    plot:
+      'Djuren på Herrgården har fått nog av människornas övergrepp. De gör uppror och grundar en ny filosofi som de kallar animalismen. De sjunger sin egen kampsång, O, Englands djur, och arbetar och trivs med sin nya tillvaro. Men smygande, nästan omärkligt, förändras deras förhållanden. En av de ledande grisarna, Napoleon, utbildar alltmer en sann diktators egenskaper.',
     image: './books-images/the-great-gatsby.png', 
     haveRead: false,
     screened: true
   },
   {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
-    female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
+    title: 'Parade',
+    sweTitle: 'Parad', 
+    author: 'Rachel Cusk',
+    female: true,
+    translatedBy: 'Niclas Hval',
+    year: 2024,
+    genre: 'Skönlitteratur',
+    pages: 164,
     plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
+      'Mitt i livet börjar en konstnär att måla bilder som är upp och ner. En del bilder föreställer hans fru i ett ofördelaktigt ljus. Tavlorna blir en stor succé. Så inleds Parad, som i fyra sammanlänkade berättelser visar upp en rad människoöden som alla befinner sig i påtaglig förvandling.',
+    image: './books-images/the-great-gatsby.png', 
+    haveRead: false,
+    screened: false
+  },
+  {
+    title: 'Steglitsan',
+    sweTitle: 'The Goldfinch', 
+    author: 'Donna Tartt',
+    female: true,
+    translatedBy: 'Rose-Marie Nielsen',
+    year: 2013,
+    genre: 'Skönlitteratur',
+    pages: 781,
+    plot:
+      'En ung pojke i New York City, Theo Decker, överlever mirakulöst en olycka som tar hans mammas liv. Ensam och sviken av sin pappa flyttar han in hos en väns familj, inom sig kämpar han med att finna en mening i sitt nya liv. Under åren som följer blir han uppslukad av en av de få saker som påminner honom om hans mamma: en liten, mystiskt fascinerande målning.',
     image: './books-images/the-great-gatsby.png', 
     haveRead: false,
     screened: true
   },
   {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
+    title: 'American Psycho',
+    sweTitle: 'American Psycho', 
+    author: 'Bret Easton Ellis',
     female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
+    translatedBy: 'Einar Heckscher',
+    year: 1991,
+    genre: 'Thriller',
+    pages: 412,
     plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
-    image: './books-images/the-great-gatsby.png', 
-    haveRead: false,
-    screened: true
-  },
-  {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
-    female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
-    plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
-    image: './books-images/the-great-gatsby.png', 
-    haveRead: false,
-    screened: true
-  },
-  {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
-    female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
-    plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
-    image: './books-images/the-great-gatsby.png', 
-    haveRead: false,
-    screened: true
-  },
-  {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
-    female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
-    plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
-    image: './books-images/the-great-gatsby.png', 
-    haveRead: false,
-    screened: true
-  },
-  {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
-    female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
-    plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
+      'Patrick Bateman är ung, snygg, välutbildad och framgångsrik. Han rör sig med arrogant självklarhet bland bankpalats och lyxkrogar i 1980-talets New York. Men status och rikedom är inte nog. All världens njutningar finns till hands, men det räcker inte. På nätterna mördar han, stympar och förnedrar.',
     image: './books-images/the-great-gatsby.png', 
     haveRead: false,
     screened: true
@@ -477,3 +477,93 @@ const books = [
     image: './books-images/pride-and-prejudice.jpg'
   }
 ]
+
+const bookContainer = document.getElementById("book-container")
+const genreFilter = document.getElementById("genre-filter")
+const booleanFilter = document.getElementById("boolean-filter")
+const englishCheckbox = document.getElementById("english-version")
+const sortAuthorBtn = document.getElementById("sort-author")
+const sortYearBtn = document.getElementById("sort-year")
+const sortPagesBtn = document.getElementById("sort-pages")
+const randomBtn = document.getElementById("random-book-btn")   
+
+let currentSort = null 
+
+//helper function
+const getLastWord = str => str.trim().split(" ").pop()
+
+// Function to show books with filters and sorting
+const displayBooks = () => {
+  const selectedGenre = genreFilter.value
+  const selectedBoolean = booleanFilter.value
+  const english = englishCheckbox.checked
+
+  bookContainer.innerHTML = ""
+
+  let filteredBooks = books.filter(book => {
+    const genreMatch = selectedGenre === "all" || book.genre === selectedGenre
+    const booleanMatch = selectedBoolean === "all" || book[selectedBoolean]
+    return genreMatch && booleanMatch
+  })
+
+  if (currentSort === "author") {
+    filteredBooks.sort((a, b) =>
+      getLastWord(a.author).localeCompare(getLastWord(b.author))
+    )
+  } else if (currentSort === "year") {
+    filteredBooks.sort((a, b) => a.year - b.year)
+    filteredBooks.reverse()
+  } else if (currentSort === "pages") {
+    filteredBooks.sort((a, b) => a.pages - b.pages)
+  }
+
+  filteredBooks.forEach(book => {
+    const bookCard = document.createElement("div")
+    bookCard.classList.add("book-card")
+
+    bookCard.innerHTML = `
+      <img src="${book.image}" alt="${book.title}">
+      <h2>${english ? book.title : book.sweTitle}</h2>
+      <h3>${book.author}</h3>
+      ${english ? "" : `<p><i>Övers. av ${book.translatedBy}</i></p>`}
+      <h4>${book.year}</h4>
+      ${english ? "" : `<p>${book.plot}</p>`}
+      <p><strong>Genre:</strong> ${book.genre}</p>
+      <p><strong>Sidor:</strong> ${book.pages}</p>
+    `
+    bookContainer.appendChild(bookCard)
+  })
+}
+
+// Update events
+genreFilter.addEventListener("change", displayBooks)
+booleanFilter.addEventListener("change", displayBooks)
+englishCheckbox.addEventListener("change", displayBooks)
+sortAuthorBtn.addEventListener("click", () => { currentSort = "author"; displayBooks() })
+sortYearBtn.addEventListener("click", () => { currentSort = "year"; displayBooks() })
+sortPagesBtn.addEventListener("click", () => { currentSort = "pages"; displayBooks() })
+
+randomBtn.addEventListener("click", () => {
+  const randomBook = books[Math.floor(Math.random() * books.length)]
+
+  bookContainer.innerHTML = ""
+
+  const bookCard = document.createElement("div")
+  bookCard.classList.add("book-card")                  //will this be changed for later styling?! or add another class??
+
+  bookCard.innerHTML = `
+    <img src="${randomBook.image}" alt="${randomBook.title}">
+    <h2>${randomBook.sweTitle}</h2>
+    <h3>${randomBook.author}</h3>
+    <p><i>Övers. av ${randomBook.translatedBy}</i></p>
+    <h4>${randomBook.year}</h4>
+    <p>${randomBook.plot}</p>
+    <p><strong>Genre:</strong> ${randomBook.genre}</p>
+    <p><strong>Sidor:</strong> ${randomBook.pages}</p>
+  `
+  bookContainer.appendChild(bookCard)
+})
+
+// Show books on page load
+displayBooks()
+
