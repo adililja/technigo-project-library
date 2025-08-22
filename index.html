@@ -5,40 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Don't forget to connect the CSS file, done! -->
   <link rel="stylesheet" href="style.css">
-  <title>Library</title>
+  <title>Mor tjafs bokskatt</title>
 </head>
 <body>
-  <h1>Library</h1>
-  
-  <label>
-    <input type="checkbox" id="english-version">
-    English version
-  </label>
+  <div class="gold-frame">
 
-  <div>
-    <button id="sort-author">Författare</button>
-    <button id="sort-year">År</button>
-    <button id="sort-pages">Omfång</button>
+    <!-- Section 1: Title and language option -->
+    <header>
+      <h1>Mor tjafs bokskatt</h1>
+      <label>
+        <input type="checkbox" id="english-version">
+        English version
+      </label>
+    </header>
+
+    <!-- Section 2: Sorting and filtering controls -->
+    <section class="controls">
+      <div class="sorting">
+        <button id="sort-author">Författare</button>
+        <button id="sort-year">År</button>
+        <button id="sort-pages">Omfång</button>
+      </div>
+
+      <div class="filters">
+        <select id="genre-filter">
+          <option value="all">Alla</option>
+          <option value="Klassiker">Klassiker</option>
+          <option value="Skönlitteratur">Skönlitteratur</option>
+        </select>
+
+        <select id="boolean-filter">
+          <option value="all">Alla</option>
+          <option value="female">Kvinnliga författare</option>
+          <option value="haveRead">Har läst</option>
+          <option value="screened">Filmatiserade</option>
+        </select>
+
+        <button id="random-book-btn">Välj åt mig</button>
+      </div>
+    </section>
+
+    <!-- Section 3: Book cards -->
+    <main id="book-container"></main>
+
   </div>
 
-  <select id="genre-filter">
-    <option value="all">Alla</option>
-    <option value="Klassiker">Klassiker</option>
-    <option value="Skönlitteratur">Skönlitteratur</option>
-  </select>
-
-  <select id="boolean-filter">
-    <option value="all">Alla</option>
-    <option value="female">Kvinnliga författare</option>
-    <option value="haveRead">Har läst</option>
-    <option value="screened">Filmatiserade</option>
-  </select>
-
-  <button id="random-book-btn">Välj åt mig</button>
-
-  <div id="book-container"></div>
-
-  <!-- Don't forget to connect the JavaScript file, done! -->
   <script src="script.js"></script>
 </body>
 </html>

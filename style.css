@@ -4,6 +4,33 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url('./books-images/marble-stone.jpg'); /* marble background */
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 40px;
+}
+
+.gold-frame {
+  margin: auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.45); /* subtle white content area */
+
+  /* Golden texture frame */
+  border: 10px solid;
+  border-image: url('./books-images/golden-frame.jpg') 50 stretch;
+
+  /* subtle shadow for depth */
+  box-shadow:
+    0 10px 15px rgba(0, 0, 0, 0.25),          /* outer shadow */
+    inset 6px 6px 10px rgba(0, 0, 0, 0.25),    /* top-left inner shadow */
+    inset -6px -6px 10px rgba(255, 255, 255, 0.1); /* subtle bottom-right inner highlight (optional) */
+  
+  /* Make gold lighter */
+  filter: brightness(1.2); /* increase for lighter gold, decrease <1 for darker */
+}
+
 img {
   max-width: 200px;
 }

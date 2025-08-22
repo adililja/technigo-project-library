@@ -232,19 +232,79 @@ const books = [
     screened: true
   },
   {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
+    title: 'The Sun Also Rises',
+    sweTitle: 'Och solen har sin gång', 
+    author: 'Ernest Hemingway',
     female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
+    translatedBy: 'Olov Jonason',
+    year: 1926,
     genre: 'Klassiker',
+    pages: 295,
+    plot:
+      'Och solen har sin gång är romanen om den förlorade generationen, om en krets av rotlösa unga människor i 20-talets Europa. Den amerikanske journalisten Jake och den unga engelskan Brett är som sina vänner smärtsamt övertygade om tillvarons brist på mening. Jakten på starka upplevelser för dem från barernas och erotikens Paris till det solheta Spanien och tjurfäktningens dramatiska final.',
+    image: './books-images/the-great-gatsby.png', 
+    haveRead: true,
+    screened: true
+  },
+  {
+    title: 'Hier',
+    sweTitle: 'I går', 
+    author: 'Agota Kristof',
+    female: true,
+    translatedBy: 'Marianne Tufvesson',
+    year: 1995,
+    genre: 'Skönlitteratur',
+    pages: 98,
+    plot:
+      'Varje dag upprepar Sandor Lester sin ”idiotiska kapplöpning”: kliver på bussen, stämplar in på fabriken. På lördagarna träffar han Yolande, som han inte är särskilt förtjust i. Den lilla tid han har över ägnar han åt att drömma om ett annat liv, en stor författares liv. Och åt att tänka på Line, den perfekta kvinnan. En morgon på bussen är det Line, den riktiga Line, som dyker upp från hans förflutna som landsflykting.',
+    image: './books-images/the-great-gatsby.png', 
+    haveRead: true,
+    screened: false
+  },
+  {
+    title: 'Arv og miljø',
+    sweTitle: 'Arv och miljö', 
+    author: 'Vigdis Hjorth',
+    female: true,
+    translatedBy: 'Ninni Holmqvist',
+    year: 2016,
+    genre: 'Autofiktion',
     pages: 453,
     plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
+      '- Att ingen av er någon enda gång har frågat mig om min historia, har jag upplevt och upplever jag som en stor sorg. - Så skriver Berglijot i ett mail till sina systrar, efter det att en häftig diskussion om förskott på ett arv har blossat upp. De är fyra syskon, och föräldrarna har nu meddelat att de två yngsta döttrarna ska särbehandlas och få ärva mer. ',
     image: './books-images/the-great-gatsby.png', 
-    haveRead: false,
-    screened: true
+    haveRead: true,
+    screened: false
+  },
+  {
+    title: 'Om bare',
+    sweTitle: 'Om bara', 
+    author: 'Vigdis Hjorth',
+    female: true,
+    translatedBy: 'Jens Hjälte',
+    year: 2001,
+    genre: 'Skönlitteratur',
+    pages: 323,
+    plot:
+      'Dramatikern och småbarnsmamman Ida Heier har mött sitt livs kärlek. Hon har förstått att något ska hända: man kan veta att man kan älska långt innan man möter den man ska älska, tänker hon. Föremålet för hennes passion är den tio år äldre professorn Arnold Busk, också han gift med barn. Han är otillgänglig, men Idas längtan efter honom blir bara starkare.',
+    image: './books-images/the-great-gatsby.png', 
+    haveRead: true,
+    screened: false
+  },
+  {
+    title: 'Genanse og verdighet',
+    sweTitle: 'Genans och värdighet', 
+    author: 'Dag Solstad',
+    female: false,
+    translatedBy: 'Lars Andersson',
+    year: 1994,
+    genre: 'Skönlitteratur',
+    pages: 182,
+    plot:
+      'Elias Rukla är en lätt alkoholiserad gymnasielärare i femtioårsåldern. När boken börjar håller han en engagerad föreläsning om Ibsens Vildanden för sin klass. För Rukla är detta en pjäs som ställer livsavgörande aktuella och existentiella frågor. Men från klassen hörs bara en tung suck. Ibsen, vem bryr sig? När lektionen är slut konstaterar Rukla resignerat men utan överraskning att han talat för döva öron.  ',
+    image: './books-images/the-great-gatsby.png', 
+    haveRead: true,
+    screened: false
   },
   {
     title: 'Lolita',
@@ -395,76 +455,6 @@ const books = [
     image: './books-images/the-great-gatsby.png', 
     haveRead: false,
     screened: true
-  },
-  {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
-    female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
-    plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
-    image: './books-images/the-great-gatsby.png', 
-    haveRead: false,
-    screened: true
-  },
-  {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
-    female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
-    plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
-    image: './books-images/the-great-gatsby.png', 
-    haveRead: false,
-    screened: true
-  },
-  {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
-    female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
-    plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
-    image: './books-images/the-great-gatsby.png', 
-    haveRead: false,
-    screened: true
-  },
-  {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
-    female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
-    plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
-    image: './books-images/the-great-gatsby.png', 
-    haveRead: false,
-    screened: true
-  },
-  {
-    title: '1984',
-    author: 'George Orwell',
-    year: 1949,
-    genre: 'Science Fiction',
-    rating: 4.4,
-    description:
-      'A dystopian classic that explores totalitarianism and the consequences of a surveillance state in a bleak future.',
-    image: './books-images/1984.jpg'
   },
   {
     title: 'Pride and Prejudice',
