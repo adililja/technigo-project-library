@@ -483,8 +483,8 @@ const cardColors = [
   "101, 0, 2",   // bordeaux
   "34, 65, 7",   // forrest green
   "3, 71, 50",   // moss green
-  "104, 150, 137",   // green blue
-  "146, 130, 57",  // mustard grey
+  "51, 31, 10",   // dark brown
+  "102, 61, 20",  // light brown
   "69, 40, 13"    // brown
 ]
 

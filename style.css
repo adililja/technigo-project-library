@@ -15,7 +15,7 @@ body {
 .gold-frame {
   margin: auto;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.45); /* subtle white content area */
+  background-color: rgba(255, 255, 255, 0.25); /* subtle white content area */
 
   /* Golden texture frame */
   border: 10px solid;
@@ -31,8 +31,56 @@ body {
   filter: brightness(1.2); /* increase for lighter gold, decrease <1 for darker */
 }
 
-img {
-  max-width: 200px;
+
+/* Titles with Spectral */
+h1, h2, h3 {
+  font-family: 'Spectral', serif;
+  margin: 0 0 0.5rem 0; /* spacing under titles */
+  line-height: 1.2;
+  color: #221407; /* dark and readable */
+}
+
+/* Body text with Lato */
+body, p, li {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #221407;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+/* Book card typography */
+.book-card h2 {
+  font-family: 'Spectral', serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+}
+
+.book-card h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #3a3a3a;
+}
+
+.book-card h4 {
+  font-family: 'Spectral', serif;
+  font-weight: 700;  
+  font-size: 1rem;   
+  color: #221407;
+  margin-bottom: 0.5rem;
+}
+
+.book-card p i {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.book-card p strong {
+  font-weight: 550;
 }
 
 .book-card {
@@ -41,14 +89,54 @@ img {
   margin: 15px auto; /* centrerar */
   padding: 15px;
   height: auto;      /* växer med texten */
+  position: relative; /* needed for pseudo-element positioning */
+  overflow: hidden;   /* keeps glare inside card */
   border-radius: 10px;
   backdrop-filter: blur(4px); /* suddar bakgrunden */
   -webkit-backdrop-filter: blur(4px); /* för Safari */
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 16px rgba(0,0,0,0.25);
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .book-card:hover {
   transform: scale(1.05);
+}
+
+.book-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;        /* start far left */
+  width: 300%;        /* wide enough to slide across */
+  height: 100%;
+  background: linear-gradient(
+    50deg, 
+    rgba(255,255,255,0) 0%, 
+    rgba(255,255,255,0.15) 48%, 
+    rgba(255,255,255,0.4) 50%,
+    rgba(255,255,255,0.15) 52%, 
+    rgba(255,255,255,0) 100%
+  );
+  transform: skewX(-25deg); /* slight skew instead of rotate */
+  opacity: 0;
+  pointer-events: none; /* doesn’t block clicks */
+}
+
+.book-card:hover::before {
+  opacity: 1;
+  animation: glare-slide 1.2s forwards;
+}
+
+@keyframes glare-slide {
+  0% { left: -150%; }
+  100% { left: 150%; }
+}
+
+.book-card img {
+  width: 100%;
+  height: 180px;           /* all images same height */
+  object-fit: cover;       /* crop & fill nicely */
+  margin-bottom: 10px;
+  border-radius: 2px;
 }
