@@ -479,6 +479,15 @@ const randomBtn = document.getElementById("random-book-btn")
 
 let currentSort = null 
 
+const cardColors = [
+  "101, 0, 2",   // bordeaux
+  "34, 65, 7",   // forrest green
+  "3, 71, 50",   // moss green
+  "104, 150, 137",   // green blue
+  "146, 130, 57",  // mustard grey
+  "69, 40, 13"    // brown
+]
+
 //helper function
 const getLastWord = str => str.trim().split(" ").pop()
 
@@ -511,6 +520,16 @@ const displayBooks = () => {
     const bookCard = document.createElement("div")
     bookCard.classList.add("book-card")
 
+    // 🎨 Slumpa en färg
+    const randomColor = cardColors[Math.floor(Math.random() * cardColors.length)]
+
+    // 🎨 Gradient från samma färg (mer opak → mindre opak)
+    bookCard.style.background = `linear-gradient(
+      135deg, 
+      rgba(${randomColor}, 0.25), 
+      rgba(${randomColor}, 0.45)
+    )`
+
     bookCard.innerHTML = `
       <img src="${book.image}" alt="${book.title}">
       <h2>${english ? book.title : book.sweTitle}</h2>
@@ -540,6 +559,14 @@ randomBtn.addEventListener("click", () => {
 
   const bookCard = document.createElement("div")
   bookCard.classList.add("book-card")                  //will this be changed for later styling?! or add another class??
+
+  // 🎨 Slumpa en färg för random-kortet
+  const randomColor = cardColors[Math.floor(Math.random() * cardColors.length)]
+  bookCard.style.background = `linear-gradient(
+    135deg, 
+    rgba(${randomColor}, 0.7), 
+    rgba(${randomColor}, 0.4)
+  )`
 
   bookCard.innerHTML = `
     <img src="${randomBook.image}" alt="${randomBook.title}">
