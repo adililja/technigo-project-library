@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <title>Madame tjats läsestund</title>
+  <title>Madame tjats bibliotek</title>
 </head>
 <body>
   <div class="gold-frame">
 
     <!-- Section 1: Title and language option -->
     <header>
-      <h1>Madame tjats läsestund</h1>
+      <h1>Madame tjats bibliotek</h1>
       <label>
         <input type="checkbox" id="english-version">
         English version
@@ -21,28 +21,55 @@
 
     <!-- Section 2: Sorting and filtering controls -->
     <section class="controls">
+      <label for="sorting">sortera</label>
       <div class="sorting">
-        <button id="sort-author">Författare</button>
-        <button id="sort-year">År</button>
-        <button id="sort-pages">Omfång</button>
+        <div class="button-wrap">
+          <button id="sort-author">
+            <span>Författare</span>
+          </button>
+          <div class="button-shadow"></div>
+        </div>  
+        <div class="button-wrap">
+          <button id="sort-year">
+            <span>År</span>
+          </button>
+          <div class="button-shadow"></div>
+        </div>
+        <div class="button-wrap">
+          <button id="sort-pages">
+            <span>Omfång</span>
+          </button>
+          <div class="button-shadow"></div>
+        </div>
       </div>
 
       <div class="filters">
-        <select id="genre-filter">
-          <option value="all">Alla</option>
-          <option value="Klassiker">Klassiker</option>
-          <option value="Skönlitteratur">Skönlitteratur</option>
-        </select>
+        <div class="filter">
+          <label for="genre-filter">genre</label>
+          <select id="genre-filter">
+            <option value="all">Alla</option>
+            <option value="Klassiker">Klassiker</option>
+            <option value="Skönlitteratur">Skönlitteratur</option>
+          </select>
+        </div>
 
-        <select id="boolean-filter">
-          <option value="all">Alla</option>
-          <option value="female">Kvinnliga författare</option>
-          <option value="haveRead">Har läst</option>
-          <option value="screened">Filmatiserade</option>
-        </select>
-
-        <button id="random-book-btn">Välj åt mig</button>
+        <div class="filter">
+          <label for="boolean-filter">filter</label>
+          <select id="boolean-filter">
+            <option value="all">Alla</option>
+            <option value="female">Kvinnliga författare</option>
+            <option value="haveRead">Har läst</option>
+            <option value="screened">Filmatiserade</option>
+          </select>
+        </div>
       </div>
+        
+      <div class="button-wrap">
+        <button id="random-book-btn">
+          <span>Välj åt mig</span>
+        </button>
+      <div class="button-shadow"></div>
+      </div> 
     </section>
 
     <!-- Section 3: Book cards -->
