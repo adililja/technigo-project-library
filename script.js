@@ -202,8 +202,8 @@ const books = [
     screened: false
   },
   {
-    title: 'Steglitsan',
-    sweTitle: 'The Goldfinch', 
+    title: 'The Goldfinch',
+    sweTitle: 'Steglitsan', 
     author: 'Donna Tartt',
     female: true,
     translatedBy: 'Rose-Marie Nielsen',
@@ -455,16 +455,6 @@ const books = [
     image: './books-images/the-great-gatsby.png', 
     haveRead: false,
     screened: true
-  },
-  {
-    title: 'Pride and Prejudice',
-    author: 'Jane Austen',
-    year: 1813,
-    genre: 'Fiction',
-    rating: 4.25,
-    description:
-      'A timeless romance novel that examines societal expectations and the misunderstandings that can arise from pride and prejudice.',
-    image: './books-images/pride-and-prejudice.jpg'
   }
 ]
 
@@ -475,7 +465,9 @@ const englishCheckbox = document.getElementById("english-version")
 const sortAuthorBtn = document.getElementById("sort-author")
 const sortYearBtn = document.getElementById("sort-year")
 const sortPagesBtn = document.getElementById("sort-pages")
-const randomBtn = document.getElementById("random-book-btn")   
+const randomBtn = document.getElementById("random-book-btn")
+const searchBar = document.getElementById("search-bar")
+
 
 let currentSort = null 
 
@@ -495,14 +487,23 @@ const getLastWord = str => str.trim().split(" ").pop()
 const displayBooks = () => {
   const selectedGenre = genreFilter.value
   const selectedBoolean = booleanFilter.value
+  const searchTerm = searchBar.value.toLowerCase()
+
   const english = englishCheckbox.checked
 
   bookContainer.innerHTML = ""
 
   let filteredBooks = books.filter(book => {
-    const genreMatch = selectedGenre === "all" || book.genre === selectedGenre
-    const booleanMatch = selectedBoolean === "all" || book[selectedBoolean]
-    return genreMatch && booleanMatch
+  const genreMatch = selectedGenre === "all" || book.genre === selectedGenre
+  const booleanMatch = selectedBoolean === "all" || book[selectedBoolean]
+
+  const searchMatch =
+    book.title.toLowerCase().includes(searchTerm) ||
+    book.sweTitle.toLowerCase().includes(searchTerm) ||
+    book.author.toLowerCase().includes(searchTerm) ||
+    book.plot.toLowerCase().includes(searchTerm)
+
+  return genreMatch && booleanMatch && searchMatch
   })
 
   if (currentSort === "author") {
@@ -551,6 +552,7 @@ englishCheckbox.addEventListener("change", displayBooks)
 sortAuthorBtn.addEventListener("click", () => { currentSort = "author"; displayBooks() })
 sortYearBtn.addEventListener("click", () => { currentSort = "year"; displayBooks() })
 sortPagesBtn.addEventListener("click", () => { currentSort = "pages"; displayBooks() })
+searchBar.addEventListener("input", displayBooks)
 
 randomBtn.addEventListener("click", () => {
   const randomBook = books[Math.floor(Math.random() * books.length)]
@@ -558,7 +560,7 @@ randomBtn.addEventListener("click", () => {
   bookContainer.innerHTML = ""
 
   const bookCard = document.createElement("div")
-  bookCard.classList.add("book-card")                  //will this be changed for later styling?! or add another class??
+  bookCard.classList.add("book-card", "random-card")                  //style random card!!!!
 
   // 🎨 Slumpa en färg för random-kortet
   const randomColor = cardColors[Math.floor(Math.random() * cardColors.length)]
