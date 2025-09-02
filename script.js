@@ -347,6 +347,7 @@ const books = [
     pages: 404,
     plot:
       'Isadora Wing är rädd för att flyga. Den där känslan av att tappa fotfästet, att lämna den invanda tryggheten och ge sig hän åt ett nyckfullt öde. Så känner hon det också när hon sätter sig på planet till New York för att åka till en psykoanalytikerkongress i Wien. Och så börjar en svindlande erotisk luftcirkus över Europa, som långt senare slutar på ett äventyrligt hotell i Paris. Då har hennes demoniska älskare Adrian Goodlove lämnat henne och återvänt till det stilla livet i sin familj. Men Isadora har gjort en betydelsefull vinst. Flygskräcken är borta ...', 
+    image: './books-images/the-great-gatsby.png', 
     haveRead: true,
     screened: false
   },

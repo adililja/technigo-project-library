@@ -28,7 +28,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
-  padding: 40px;
+  padding: 20px;
 }
 
 .gold-frame {
@@ -50,6 +50,12 @@ body {
   filter: brightness(1.2); /* increase for lighter gold, decrease <1 for darker */
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* so it stacks on mobile */
+}
 
 /* Titles with Spectral */
 h1, h2, h3 {
@@ -445,6 +451,13 @@ button:active::after {
   text-shadow: 0.025em 0.25em 0.05em rgba(0, 0, 0, 0.12);
 }
 
+#book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+  gap: 1rem;
+  margin-top: 1.6rem;
+}
+
 /* Book card typography */
 .book-card h2 {
   font-family: 'Spectral', serif;
@@ -481,7 +494,7 @@ button:active::after {
 
 .book-card {
   width: 100%;       /* fyller mobilskärmen */
-  max-width: 320px;  /* lagom för att inte bli för breda */
+  max-width: 280px;  /* lagom för att inte bli för breda */
   margin: 15px auto; /* centrerar */
   padding: 15px;
   height: auto;      /* växer med texten */
@@ -531,8 +544,62 @@ button:active::after {
 
 .book-card img {
   width: 100%;
-  height: 180px;           /* all images same height */
+  height: auto;  /* Let height scale naturally */
+  max-height: 220px; /* Prevent too tall covers */
   object-fit: cover;       /* crop & fill nicely */
   margin-bottom: 10px;
   border-radius: 2px;
+}
+
+/* Tablets */
+@media (min-width: 668px) {
+  body {
+    padding: 40px;
+  }
+  .book-card img {
+    height: 200px;
+  }
+
+  #random-book-btn {
+  width: 200px;
+  font-size: 1.2em;
+}
+
+.random-card {
+  max-width: 50%;
+}
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  header {
+    position: relative;
+  }
+
+  header label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0; /* space from frame */
+  }
+  
+  /* something must be done..*/
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+  
+  .filters {
+    flex: 2;
+  }
+
+  #random-book-btn {
+    width: auto;
+  }
+
+  .random-card {
+  max-width: 40%;
+}
 }
