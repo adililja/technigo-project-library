@@ -13,7 +13,7 @@ const books = [
     female: false,
     translatedBy: 'Gösta Olzon',
     year: 1925,
-    genre: 'Klassiker',
+    genre: 'Modernism',
     pages: 211,
     plot:
       'Det är sommaren 1922 och Nick Carraway flyttar till ett yrvaket New York för att göra karriär. I West Egg på Long Island hyr han en villa intill ett av öns mest praktfulla hus. Ett sagolikt palats under vildvuxen murgröna. Från dess blå trädgård hörs musik nätterna igenom och stadens societet kommer och går i en aldrig sinande ström. Festerna är magnifika, de är omtalade, oändliga, men ingen tyckts veta vem mannen bakom dem egentligen är.',
@@ -28,7 +28,7 @@ const books = [
     female: true,
     translatedBy: 'Gunilla Lundborg',
     year: 1997,
-    genre: 'Skönlitteratur',
+    genre: 'Contemporary',
     pages: 331,
     plot:
       'Alla sinnen vidöppna? Den här romanen förväntar sig det. Här forsar känslor, dofter, smaker, färger, tankar fram. Kärlek, tvillingars symbios, klasskillnader och politik gjuts samman i en bred familjekrönika, formad med sällsynt kraft och poesi. En övermogen mango på väg att spricka.',
@@ -43,7 +43,7 @@ const books = [
     female: false,
     translatedBy: 'Staffan Dahl',
     year: 1879,
-    genre: 'Klassiker',
+    genre: 'Classic',
     pages: 1134,
     plot:
       'Fjodor Karamazov är mördad. Godsägaren och fadern till tre - eller egentligen fyra - söner, var en hänsynslös patriark och saknade inte fiender. En av sönerna misstänks för mordet. Men Dmitrij har väl ändå inte haft ihjäl sin egen far?',
@@ -58,7 +58,7 @@ const books = [
     female: false,
     translatedBy: 'Aris Fioretos',
     year: 1955,
-    genre: 'Klassiker',
+    genre: 'Counterculture',
     pages: 453,
     plot:
       'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
@@ -73,7 +73,7 @@ const books = [
     female: false,
     translatedBy: 'Klas Östergren',
     year: 1951,
-    genre: 'Klassiker',
+    genre: 'Counterculture',
     pages: 201,
     plot:
       'Holden Caufield är 16 år och tycker livet är för jävligt, men ibland också så vackert att man kan dö. Han har just blivit relegerad från skolan och ska möta sina föräldrar i New York. Istället dyker han in i Manhattans storstadsdjungel för att under några hektiska dygn leva som en vuxen. Han hinner gå på nattklubbar, möta före detta flickvänner, misslyckas kapitalt med ett hotelläventyr med en call girl innan familjen obevekligt åter sluter sig kring honom.',
@@ -88,7 +88,7 @@ const books = [
     female: true,
     translatedBy: '-',
     year: 1902,
-    genre: 'Klassiker',
+    genre: 'Classic',
     pages: 500,
     plot:
       'Jerusalem är berättelsen om en stark väckelsevåg som delar en socken i Dalarna - en handfull familjer följer kallelsen och beger sig till det heliga landet medan andra väljer att bli kvar på sina gårdar. Med starka färger och i dramatiska konflikter gestaltar Selma Lagerlöf här de teman som går djupast i hennes författarskap: trons makt och kärlekens förunderliga vägar.',
@@ -103,7 +103,7 @@ const books = [
     female: false,
     translatedBy: 'Olof Zachrisson Rothlin',
     year: 1934,
-    genre: 'Skönlitteratur',
+    genre: 'Modernism',
     pages: 432,
     plot:
       'Den utspelar sig på franska rivieran under 1920-talet där Dick och Nicole Diver lever ett glamoröst och spännande överklassliv tillsammans med andra rika amerikaner. I paret Divers fantastiska villa går konstnärer och andra excentriker in och ut, däribland den vackra artonåriga skådespelerskan Rosemary Hoyt. När hon får för sig att förföra Dick brister den ömtåliga struktur som håller ihop Dicks äktenskap med Nicole, och mörka hemligheter avslöjas.',
@@ -118,7 +118,7 @@ const books = [
     female: false,
     translatedBy: 'Thomas Preis',
     year: 1988,
-    genre: 'Skönlitteratur',
+    genre: 'Contemporary',
     pages: 549,
     plot:
       'Gibril Farishta är den indiska filmindustrins mest skandalomsusade stjärna. Saladin Chamcha är en berömd röstimitatör. Tillsammans sitter de på ett flygplan på väg till England när planet plötsligt kapas, sprängs och störtar. Som ett mirakel överlever de båda ett fritt fall från tiotusen meters höjd, och knappt har de stigit iland på den engelska kusten förrän de förvandlas till änglar - en god och en ond. ',
@@ -133,7 +133,7 @@ const books = [
     female: false,
     translatedBy: 'Olov Jonason',
     year: 1965,
-    genre: 'True crime',
+    genre: 'Counterculture',
     pages: 471,
     plot:
       '1959 mördas den förmögne farmaren Herb Clutter och hans familj på Clutters gård i Kansas. Den 30 december arresteras de nyligen frigivna straffångarna Dick Hickock och Perry Smith för mordet. Drygt fem år senare hängs de. Dessa data markerar riktpunkterna i ett massmord som framstår som lika oundvikligt som meningslöst. Med kallt blod växer från en skildring av individuella öden till en bild av skoningslösa sociala mekanismer i det amerikanska samhället.',
@@ -148,7 +148,7 @@ const books = [
     female: true,
     translatedBy: 'Maria Ekman',
     year: 1985,
-    genre: 'Dystopi',
+    genre: 'Dystopia',
     pages: 349,
     plot:
       'I kampen mot sjunkande födelsetal rekryteras kvinnor i fruktsam ålder och utnyttjas hämningslöst som Tjänarinnor när de befruktas mot sin vilja av härskarklassens män, Anförarna. Offred är en Tjänarinna som lever under strikt övervakning, men som drömmer om att ta sig bortom Muren och bli fri igen.',
@@ -163,7 +163,7 @@ const books = [
     female: false,
     translatedBy: 'Thomas Warburton',
     year: 1948,
-    genre: 'Dystopi',
+    genre: 'Dystopia',
     pages: 283,
     plot:
       'Winston Smith arbetar på Sanningsministeriet med att ändra historien och därmed visa att Partiet och dess ledare alltid haft rätt, och alltid kommer att ha det. Men i hans enformiga tillvaro väcks en längtan efter något annat, ett upproriskt frö som i sig är nog för att leda till hans undergång.',
@@ -178,7 +178,7 @@ const books = [
     female: false,
     translatedBy: 'Nils Holmberg',
     year: 1945,
-    genre: 'Klassiker',
+    genre: 'Dystopia',
     pages: 127,
     plot:
       'Djuren på Herrgården har fått nog av människornas övergrepp. De gör uppror och grundar en ny filosofi som de kallar animalismen. De sjunger sin egen kampsång, O, Englands djur, och arbetar och trivs med sin nya tillvaro. Men smygande, nästan omärkligt, förändras deras förhållanden. En av de ledande grisarna, Napoleon, utbildar alltmer en sann diktators egenskaper.',
@@ -193,7 +193,7 @@ const books = [
     female: true,
     translatedBy: 'Niclas Hval',
     year: 2024,
-    genre: 'Skönlitteratur',
+    genre: 'Contemporary',
     pages: 164,
     plot:
       'Mitt i livet börjar en konstnär att måla bilder som är upp och ner. En del bilder föreställer hans fru i ett ofördelaktigt ljus. Tavlorna blir en stor succé. Så inleds Parad, som i fyra sammanlänkade berättelser visar upp en rad människoöden som alla befinner sig i påtaglig förvandling.',
@@ -208,7 +208,7 @@ const books = [
     female: true,
     translatedBy: 'Rose-Marie Nielsen',
     year: 2013,
-    genre: 'Skönlitteratur',
+    genre: 'Contemporary',
     pages: 781,
     plot:
       'En ung pojke i New York City, Theo Decker, överlever mirakulöst en olycka som tar hans mammas liv. Ensam och sviken av sin pappa flyttar han in hos en väns familj, inom sig kämpar han med att finna en mening i sitt nya liv. Under åren som följer blir han uppslukad av en av de få saker som påminner honom om hans mamma: en liten, mystiskt fascinerande målning.',
@@ -223,7 +223,7 @@ const books = [
     female: false,
     translatedBy: 'Einar Heckscher',
     year: 1991,
-    genre: 'Thriller',
+    genre: 'Counterculture',
     pages: 412,
     plot:
       'Patrick Bateman är ung, snygg, välutbildad och framgångsrik. Han rör sig med arrogant självklarhet bland bankpalats och lyxkrogar i 1980-talets New York. Men status och rikedom är inte nog. All världens njutningar finns till hands, men det räcker inte. På nätterna mördar han, stympar och förnedrar.',
@@ -238,7 +238,7 @@ const books = [
     female: false,
     translatedBy: 'Olov Jonason',
     year: 1926,
-    genre: 'Klassiker',
+    genre: 'Modernism',
     pages: 295,
     plot:
       'Och solen har sin gång är romanen om den förlorade generationen, om en krets av rotlösa unga människor i 20-talets Europa. Den amerikanske journalisten Jake och den unga engelskan Brett är som sina vänner smärtsamt övertygade om tillvarons brist på mening. Jakten på starka upplevelser för dem från barernas och erotikens Paris till det solheta Spanien och tjurfäktningens dramatiska final.',
@@ -253,7 +253,7 @@ const books = [
     female: true,
     translatedBy: 'Marianne Tufvesson',
     year: 1995,
-    genre: 'Skönlitteratur',
+    genre: 'Contemporary',
     pages: 98,
     plot:
       'Varje dag upprepar Sandor Lester sin ”idiotiska kapplöpning”: kliver på bussen, stämplar in på fabriken. På lördagarna träffar han Yolande, som han inte är särskilt förtjust i. Den lilla tid han har över ägnar han åt att drömma om ett annat liv, en stor författares liv. Och åt att tänka på Line, den perfekta kvinnan. En morgon på bussen är det Line, den riktiga Line, som dyker upp från hans förflutna som landsflykting.',
@@ -268,7 +268,7 @@ const books = [
     female: true,
     translatedBy: 'Ninni Holmqvist',
     year: 2016,
-    genre: 'Autofiktion',
+    genre: 'Nordic',
     pages: 453,
     plot:
       '- Att ingen av er någon enda gång har frågat mig om min historia, har jag upplevt och upplever jag som en stor sorg. - Så skriver Berglijot i ett mail till sina systrar, efter det att en häftig diskussion om förskott på ett arv har blossat upp. De är fyra syskon, och föräldrarna har nu meddelat att de två yngsta döttrarna ska särbehandlas och få ärva mer. ',
@@ -283,7 +283,7 @@ const books = [
     female: true,
     translatedBy: 'Jens Hjälte',
     year: 2001,
-    genre: 'Skönlitteratur',
+    genre: 'Nordic',
     pages: 323,
     plot:
       'Dramatikern och småbarnsmamman Ida Heier har mött sitt livs kärlek. Hon har förstått att något ska hända: man kan veta att man kan älska långt innan man möter den man ska älska, tänker hon. Föremålet för hennes passion är den tio år äldre professorn Arnold Busk, också han gift med barn. Han är otillgänglig, men Idas längtan efter honom blir bara starkare.',
@@ -298,7 +298,7 @@ const books = [
     female: false,
     translatedBy: 'Lars Andersson',
     year: 1994,
-    genre: 'Skönlitteratur',
+    genre: 'Nordic',
     pages: 182,
     plot:
       'Elias Rukla är en lätt alkoholiserad gymnasielärare i femtioårsåldern. När boken börjar håller han en engagerad föreläsning om Ibsens Vildanden för sin klass. För Rukla är detta en pjäs som ställer livsavgörande aktuella och existentiella frågor. Men från klassen hörs bara en tung suck. Ibsen, vem bryr sig? När lektionen är slut konstaterar Rukla resignerat men utan överraskning att han talat för döva öron.  ',
@@ -313,7 +313,7 @@ const books = [
     female: false,
     translatedBy: 'Sigurd Agrell',
     year: 1927,
-    genre: 'Klassiker',
+    genre: 'Classic',
     pages: 648 + 567,
     plot:
       'När den rebelliska Anna Karenina öppet vänder sitt kärlekslösa äktenskap ryggen, för den äkta passionen med greve Vronskij, utsätter hon sig för samhällets hårda dom och hyckleri.',
@@ -328,7 +328,7 @@ const books = [
     female: true,
     translatedBy: 'IngaLisa Munck & Sonja Bergvall',
     year: 1927,
-    genre: 'Skönlitteratur',
+    genre: 'Modernism',
     pages: 206,
     plot:
       'Mrs Ramsay är värdinnan i familjens sommarvilla på ön Skye. Deras lille son James, vars högsta önskan är att åka på utflykt till fyren, slängs mellan hopp och besvikelse när än den ena, än den andra ger sin väderleksrapport för morgondagen. Mr Ramsay, en analytisk professor, är skeptisk. Runt värdparet kretsar bekanta på besök i sommarparadiset, däribland Lily Briscoe, en ung konstnärinna som förevigar människorna runt omkring henne genom sin pensel.',
@@ -343,7 +343,7 @@ const books = [
     female: true,
     translatedBy: 'Annika Preis',
     year: 1973,
-    genre: 'Feministisk',
+    genre: 'Counterculture',
     pages: 404,
     plot:
       'Isadora Wing är rädd för att flyga. Den där känslan av att tappa fotfästet, att lämna den invanda tryggheten och ge sig hän åt ett nyckfullt öde. Så känner hon det också när hon sätter sig på planet till New York för att åka till en psykoanalytikerkongress i Wien. Och så börjar en svindlande erotisk luftcirkus över Europa, som långt senare slutar på ett äventyrligt hotell i Paris. Då har hennes demoniska älskare Adrian Goodlove lämnat henne och återvänt till det stilla livet i sin familj. Men Isadora har gjort en betydelsefull vinst. Flygskräcken är borta ...', 
@@ -358,10 +358,10 @@ const books = [
     female: false,
     translatedBy: 'Andreas Vesterlund',
     year: 1957,
-    genre: 'Generationsroman',
+    genre: 'Counterculture',
     pages: 334,
     plot:
-      'En resa från kust till kust med bebop och marijuana, lika cool som den är intensiv - den första beat-romanen. ',
+      'En resa från kust till kust med bebop och marijuana, lika cool som den är intensiv - den första beat-romanen.',
     image: './books-images/the-great-gatsby.png', 
     haveRead: true,
     screened: true
@@ -373,7 +373,7 @@ const books = [
     female: true,
     translatedBy: 'Gösta Olzon',
     year: 1813,
-    genre: 'Klassiker',
+    genre: 'Classic',
     pages: 345,
     plot:
       ' Kärleken mellan Elisabeth Bennet och Fitzwilliam Darcy är en kamp. Han har sin stolthet, hon har sin krassa blick på världen. Lika tydlig som Jane Austens borgerliga roman är i skildringen av kärleksrelationer som maktmedel, lika mångbottnade och föränderliga är karaktärerna; lika levande är miljöerna och landskapet. ',
@@ -388,7 +388,7 @@ const books = [
     female: false,
     translatedBy: 'Anders Bondegård',
     year: 1856,
-    genre: 'Klassiker',
+    genre: 'Classic',
     pages: 458,
     plot:
       'I berättelsen om Emma Bovarys äktenskap, upprepade otrohet, romanläsning, romantiska drömmar och slutliga tragedi ryms både läsningens himmel och helvete. Läsningen som flykt, som dröm, som bättre version av verkligheten.',
@@ -403,7 +403,7 @@ const books = [
     female: false,
     translatedBy: 'Harry Blomberg',
     year: 1920,
-    genre: 'Roman',
+    genre: 'Nordic',
     pages: 184,
     plot:
       'Boken skildrar en namnlös ung mans alltmer desperata ansträngningar med att försöka försörja sig som författare i staden Kristiania. Han är fast i en värld som både är ovetande om och struntar i hans existens. Genom Hamsuns febriga och modernistiska prosa kastas läsaren rakt in i den namnlösa unge mannens inre liv. Utan filter skildras hans febriga vandringar och tilltagande kaos i en oförlåtande stad. Hans jakt efter husrum, växelpengar, mat och kärlek blir steg in i själens mörker; ett gradvis nedstigande i armod, svält och galenskap.',
@@ -418,7 +418,7 @@ const books = [
     female: false,
     translatedBy: 'Ulrika Wallenström',
     year: 1901,
-    genre: 'Generationsroman',
+    genre: 'Classic',
     pages: 849,
     plot:
       'Den skildrar en familjs utveckling under fyra generationer, från köpmän till konstnärer. Thomas Mann härstammade själv från en gammal köpmanssläkt i Lübeck och hans roman bygger i stor utsträckning på hans egna upplevelser. Den smärtsamma slitning som han hade känt inom sig mellan faderns trygga borgerlighet och moderns konstnärstemperament speglas i bokens konflikt mellan livskraftiga vardagsmänniskor och ömtåliga konstnärsnaturer.',
@@ -427,34 +427,34 @@ const books = [
     screened: true
   },
   {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
+    title: 'Morgenstjernen',
+    sweTitle: 'Morgonstjärnan', 
+    author: 'Karl Ove Knausgård',
     female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
+    translatedBy: 'Staffan Söderblom',
+    year: 2020,
+    genre: 'Nordic',
+    pages: 663,
     plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
+      'Det är sent i augusti, sommarledighetens sista skälvande dagar. Litteraturprofessor Arne och konstnären Tove befinner sig på Sørlandet tillsammans med sina barn. Vännen Egil bor i ett hus alldeles i närheten, prästen Kathrine är på väg hem från ett seminarium, fritidsledaren Emil repar med sitt band, journalisten Jostein är ute på stan och hans flickvän Turid jobbar natt på sjukhuset. Över var och en av dem dyker det plötsligt upp en jättelik stjärna på himlavalvet. Inte ens astronomerna har ord för att förklara vad det är som sker.',
     image: './books-images/the-great-gatsby.png', 
     haveRead: false,
-    screened: true
+    screened: false
   },
   {
-    title: 'Lolita',
-    sweTitle: 'Lolita', 
-    author: 'Vladimir Nabokov',
-    female: false,
-    translatedBy: 'Aris Fioretos',
-    year: 1955,
-    genre: 'Klassiker',
-    pages: 453,
+    title: 'Sommarboken',
+    sweTitle: 'Sommarboken', 
+    author: 'Tove Jansson',
+    female: true,
+    translatedBy: '-',
+    year: 1972,
+    genre: 'Nordic',
+    pages: 192,
     plot:
-      'Vladimir Nabokovs Lolita är en monstruös roman, totalitär i sin sexism, men också en vild satir och fars, flödande av lekar med genrer som bekännelseroman, romantisk skräckberättelse med dubbelgångarmotiv, dektivroman med flera.',
+      'Sommarboken handlar om tre människor som bor på en vacker ö i skärgården: Sophia, hennes pappa och farmor. Det är mest av allt en berättelse om vänskapen mellan en mycket gammal kvinna och en mycket ung flicka. Deras vänskap över generationsgränserna är lika stark och intensiv som en sommar i skärgården kan vara efterlängtad. Sommarboken en glad och varm bok fylld av livskänsla.',
     image: './books-images/the-great-gatsby.png', 
     haveRead: false,
-    screened: true
+    screened: false
   }
 ]
 

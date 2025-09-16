@@ -21,35 +21,43 @@
 
     <!-- Section 2: Sorting and filtering controls -->
     <section class="controls">
-      <label for="sorting">sortera</label>
-      <div class="sorting">
-        <div class="button-wrap">
-          <button id="sort-author">
-            <span>Författare</span>
-          </button>
-          <div class="button-shadow"></div>
-        </div>  
-        <div class="button-wrap">
-          <button id="sort-year">
-            <span>År</span>
-          </button>
-          <div class="button-shadow"></div>
-        </div>
-        <div class="button-wrap">
-          <button id="sort-pages">
-            <span>Omfång</span>
-          </button>
-          <div class="button-shadow"></div>
+      <!-- Sorting block (label + buttons) -->
+      <div class="sorting-block">
+        <label for="sorting">sortera</label>
+        <div class="sorting">
+          <div class="button-wrap">
+            <button id="sort-author">
+              <span>Författare</span>
+            </button>
+            <div class="button-shadow"></div>
+          </div>  
+          <div class="button-wrap">
+            <button id="sort-year">
+              <span>År</span>
+            </button>
+            <div class="button-shadow"></div>
+          </div>
+          <div class="button-wrap">
+            <button id="sort-pages">
+              <span>Omfång</span>
+            </button>
+            <div class="button-shadow"></div>
+          </div>
         </div>
       </div>
 
+      <!-- Filters in the middle -->
       <div class="filters">
         <div class="filter">
           <label for="genre-filter">genre</label>
           <select id="genre-filter">
             <option value="all">Alla</option>
-            <option value="Klassiker">Klassiker</option>
-            <option value="Skönlitteratur">Skönlitteratur</option>
+            <option value="Classic">Klassisk realism och generationsromaner</option>
+            <option value="Modernism">Modernism i mellankrigstiden</option>
+            <option value="Contemporary">Samtidslitteratur</option>
+            <option value="Dystopia">Dystopier om makt, kontroll och ideologi</option>
+            <option value="Counterculture">Upproriska röster och motkultur</option>
+            <option value="Nordic">Nordiskt fokus</option>
           </select>
         </div>
 
@@ -64,23 +72,30 @@
         </div>
       </div>
 
-      <div class="filter">
-        <label for="search-bar">sök</label>
-        <input type="text" id="search-bar" placeholder=" ">
+      <!-- Search + random button on the right -->
+      <div class="controls-right">
+        <div class="filter">
+          <label for="search-bar">sök</label>
+          <input type="text" id="search-bar" placeholder=" ">
+        </div>
+            
+        <div class="button-wrap">
+          <button id="random-book-btn">
+            <span>Välj åt mig</span>
+          </button>
+          <div class="button-shadow"></div>
+        </div> 
       </div>
-        
-      <div class="button-wrap">
-        <button id="random-book-btn">
-          <span>Välj åt mig</span>
-        </button>
-      <div class="button-shadow"></div>
-      </div> 
     </section>
 
     <!-- Section 3: Book cards -->
     <main id="book-container"></main>
 
   </div>
+
+  <footer class="page-footer">
+    <p>&copy; 2025 Adriana Lilja. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
