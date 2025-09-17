@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +13,15 @@
     <!-- Section 1: Title and language option -->
     <header>
       <h1>Madame tjats bibliotek</h1>
-      <label>
+      <label for="english-version">
         <input type="checkbox" id="english-version">
         English version
       </label>
     </header>
 
     <!-- Section 2: Sorting and filtering controls -->
-    <section class="controls">
-      <!-- Sorting block (label + buttons) -->
+    <section class="controls" aria-label="Sortering och filter">
+      <!-- Sorting block -->
       <div class="sorting-block">
         <label for="sorting">sortera</label>
         <div class="sorting">
@@ -46,7 +46,7 @@
         </div>
       </div>
 
-      <!-- Filters in the middle -->
+      <!-- Filters -->
       <div class="filters">
         <div class="filter">
           <label for="genre-filter">genre</label>
@@ -65,14 +65,14 @@
           <label for="boolean-filter">filter</label>
           <select id="boolean-filter">
             <option value="all">Alla</option>
-            <option value="female">Kvinnliga författare</option>
-            <option value="haveRead">Har läst</option>
+            <option value="isFemale">Kvinnliga författare</option>
+            <option value="isRead">Har läst</option>
             <option value="screened">Filmatiserade</option>
           </select>
         </div>
       </div>
 
-      <!-- Search + random button on the right -->
+      <!-- Search and random button -->
       <div class="controls-right">
         <div class="filter">
           <label for="search-bar">sök</label>
