@@ -543,12 +543,18 @@ button:active::after {
 }
 
 .book-card img {
-  width: 100%;
-  height: auto;  /* Let height scale naturally */
-  max-height: 220px; /* Prevent too tall covers */
-  object-fit: cover;       /* crop & fill nicely */
-  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto 10px; /* center horizontally */
+  max-width: 100%;
+  max-height: 220px;      /* keep it from being too tall */
+  object-fit: cover;    /* scales whole image without cropping */
   border-radius: 2px;
+  filter: grayscale(95%);
+  transition: filter 0.4s ease; /* smooth transition */
+}
+
+.book-card:hover img {
+  filter: grayscale(20%);
 }
 
 .page-footer {
