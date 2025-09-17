@@ -13,4 +13,4 @@ There are two things I realize colud be improved already. That is to make the ra
 
 ## View it live
 
-Netlify link
+https://madametjats.netlify.app/
